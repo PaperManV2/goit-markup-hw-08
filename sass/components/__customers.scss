@@ -1,0 +1,39 @@
+.customers {
+  height: 372px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px $--social-media-color;
+    border-radius: 4px;
+    fill: $--social-media-color;
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      fill: $--blue-text;
+      border-color: $--blue-text;
+    }
+  }
+}

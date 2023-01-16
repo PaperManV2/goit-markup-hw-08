@@ -1,0 +1,43 @@
+.teamPros {
+  width: 1170px;
+  height: 251px;
+  padding: 94px 215px 94px 215px;
+  margin: 0 auto;
+
+  &__item {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__companies {
+    height: 120px;
+    width: 270px;
+    background-color: $--crue-gallery-color;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list {
+    padding: 0px;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: $--body-font-color;
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: $--gray-text;
+    flex-wrap: wrap;
+  }
+}

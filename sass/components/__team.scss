@@ -1,0 +1,89 @@
+.team {
+  background-color: $--crue-gallery-color;
+  height: 648px;
+  width: 99vw;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    padding: 0px;
+  }
+
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 428px;
+    gap: 30px;
+    padding-bottom: 30px;
+    background: $--footer-Studio-text-color;
+    box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: $--body-font-color;
+    line-height: 2;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 1rem;
+    color: $--gray-text;
+    line-height: 1.88;
+    text-align: center;
+    height: 110px;
+  }
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $--blue-text;
+    }
+
+    &:hover .socialmedia__image,
+    &:focus .socialmedia__image {
+      fill: $--footer-Studio-text-color;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__image {
+    fill: $--social-media-color;
+  }
+}

@@ -1,0 +1,52 @@
+.bigAd {
+  background-color: $--background-color-dark;
+  background: linear-gradient(#2f303a40, #2f303a40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/bigAddBackground/Img.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1600px;
+
+  &__btn {
+    width: 200px;
+    height: 50px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:visited {
+      color: $--body-font-color;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $--blue-text;
+      color: $--footer-Studio-text-color;
+    }
+  }
+
+  &__title {
+    color: $--footer-Studio-text-color;
+    font-weight: 900;
+    font-size: 2.75rem;
+    line-height: 1.16;
+    text-align: center;
+  }
+
+  &__display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
