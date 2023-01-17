@@ -1,3 +1,17 @@
+@media screen and (max-width: 480px) {
+  .header {
+    width: 480px;
+    height: 60px;
+    &__nav {
+      display:none;
+    }
+    &__item{
+      display:none;
+    }
+  }
+}
+
+
 .header {
   width: 1600px;
   padding-top: 0px;
@@ -22,6 +36,7 @@
   }
 
   &__link {
+    display: block;
     transition-property: color, fill, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
