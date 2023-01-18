@@ -1,14 +1,23 @@
 .teamPros {
-  width: 1170px;
+  width: 100%;
   height: 251px;
-  padding: 94px 215px 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 
   &__item {
     width: 260px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+
+  &__optimizer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   &__companies {
@@ -39,5 +48,27 @@
     line-height: 1.71;
     color: $--gray-text;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .teamPros {
+    height: 994px;
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__optimizer {
+      align-items: center;
+    }
+
+    &__item {
+      width: 450px;
+    }
+
+    &__companies {
+      width: 450px;
+    }
   }
 }

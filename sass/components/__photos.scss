@@ -50,3 +50,9 @@
     height: 294px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .photos {
+    display: none;
+  }
+}
