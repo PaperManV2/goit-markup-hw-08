@@ -162,3 +162,38 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    width: 480px;
+    height: 603px;
+    gap: 60px;
+    flex-direction: column;
+
+    &__container {
+      text-align: center;
+    }
+
+    &__address {
+      text-align: center;
+      align-items: center;
+    }
+
+    &__socialmedia {
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+
+  .newsletter {
+    width: 450px;
+    height: 156px;
+    margin-top: 0;
+    gap: 20px;
+
+    &__form {
+      gap: 20px;
+      flex-direction: column;
+    }
+  }
+}

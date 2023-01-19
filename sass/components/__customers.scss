@@ -17,6 +17,7 @@
   &__list {
     display: flex;
     gap: 30px;
+    padding-left: 0;
   }
 
   &__image {
@@ -34,6 +35,19 @@
     &:hover {
       fill: $--blue-text;
       border-color: $--blue-text;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .customers {
+    width: 480px;
+    height: 519px;
+
+    &__list {
+      display: grid;
+      flex-direction: unset;
+      grid-template-columns: 1fr 1fr;
     }
   }
 }

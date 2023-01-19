@@ -1,13 +1,18 @@
 .team {
   background-color: $--crue-gallery-color;
   height: 648px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 50px;
   align-items: center;
   justify-content: center;
   padding-bottom: 94px;
+
+  &__photo {
+    width: 270px;
+    height: 260px;
+  }
 
   &__list {
     display: flex;
@@ -85,5 +90,27 @@
 
   &__image {
     fill: $--social-media-color;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team {
+    height: 2761px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    gap: 30px;
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__photo {
+      width: 450px;
+      height: 460px;
+    }
+
+    &__container {
+      height: 622px;
+    }
   }
 }
