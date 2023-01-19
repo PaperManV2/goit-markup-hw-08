@@ -114,6 +114,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
+    display: block;
   }
 
   &__input {
@@ -190,10 +191,18 @@
     height: 156px;
     margin-top: 0;
     gap: 20px;
+    align-items: center;
+    justify-content: unset;
 
     &__form {
+      height: 120px;
       gap: 20px;
       flex-direction: column;
+      align-items: center;
+    }
+
+    &__text {
+      text-align: center;
     }
   }
 }

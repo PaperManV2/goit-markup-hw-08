@@ -31,6 +31,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+    display: block;
   }
 
   &__form {
@@ -145,4 +146,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    height: 609px;
+    width: 450px;
+
+    &__checkbox {
+      gap: 8px;
+    }
+
+    &__container {
+      width: 370px;
+    }
+
+    &__title {
+      width: 330px;
+      text-align: center;
+    }
+  }
 }
