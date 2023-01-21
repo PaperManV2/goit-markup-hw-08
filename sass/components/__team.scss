@@ -1,21 +1,21 @@
 .team {
   background-color: $--crue-gallery-color;
-  height: 648px;
+  height: 2761px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 50px;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 
   &__photo {
-    width: 270px;
-    height: 260px;
+    width: 450px;
+    height: 460px;
   }
 
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
     padding: 0px;
   }
@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 428px;
+    height: 592px;
     gap: 30px;
     padding-bottom: 30px;
     background: $--footer-Studio-text-color;
@@ -93,10 +93,9 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .team {
     height: 1285px;
-    padding-bottom: 60px;
     padding-top: 60px;
     gap: 30px;
 
@@ -116,24 +115,70 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .team {
-    height: 2761px;
-    padding-bottom: 60px;
-    padding-top: 60px;
+    height: 522px;
+    padding-bottom: 94px;
+    padding-top: 94px;
     gap: 30px;
 
     &__list {
-      flex-direction: column;
+      display: flex;
+      flex-direction: row;
     }
 
     &__photo {
-      width: 450px;
-      height: 460px;
+      width: 270px;
+      height: 260px;
     }
 
     &__container {
-      height: 622px;
+      height: 428px;
     }
   }
 }
+
+// @media screen and (min-width: 480px) and (max-width: 768px) {
+//   .team {
+//     height: 1285px;
+//     padding-bottom: 60px;
+//     padding-top: 60px;
+//     gap: 30px;
+
+//     &__list {
+//       display: grid;
+//       grid-template-columns: 1fr 1fr;
+//     }
+
+//     &__photo {
+//       width: 354px;
+//       height: 374px;
+//     }
+
+//     &__container {
+//       height: 536px;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 480px) {
+//   .team {
+//     height: 2761px;
+//     padding-bottom: 60px;
+//     padding-top: 60px;
+//     gap: 30px;
+
+//     &__list {
+//       flex-direction: column;
+//     }
+
+//     &__photo {
+//       width: 450px;
+//       height: 460px;
+//     }
+
+//     &__container {
+//       height: 622px;
+//     }
+//   }
+// }
