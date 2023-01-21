@@ -51,6 +51,20 @@
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .bigAd {
+    height: 400px;
+    background-image: url(../images/bigAddBackground/tabletImg.png);
+
+    &__title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26px;
+    }
+  }
+}
+
 @media screen and (max-width: 480px) {
   .bigAd {
     background-image: url(../images/bigAddBackground/phoneImg.png);
@@ -61,6 +75,7 @@
       font-style: normal;
       font-weight: 900;
       font-size: 26px;
+      letter-spacing: 0.06em;
     }
   }
 }

@@ -51,6 +51,12 @@
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .photos {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .photos {
     display: none;

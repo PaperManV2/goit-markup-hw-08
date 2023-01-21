@@ -93,6 +93,29 @@
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .team {
+    height: 1285px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    gap: 30px;
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__photo {
+      width: 354px;
+      height: 374px;
+    }
+
+    &__container {
+      height: 536px;
+    }
+  }
+}
+
 @media screen and (max-width: 480px) {
   .team {
     height: 2761px;

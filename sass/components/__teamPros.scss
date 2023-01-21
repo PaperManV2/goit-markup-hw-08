@@ -51,6 +51,24 @@
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .teamPros {
+    height: 522px;
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+      width: 354px;
+    }
+    &__companies {
+      width: 354px;
+    }
+  }
+}
+
 @media screen and (max-width: 480px) {
   .teamPros {
     height: 994px;
