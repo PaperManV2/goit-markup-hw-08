@@ -1,10 +1,14 @@
 .customers {
-  height: 372px;
+  height: 399px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
+  width: 100%;
+  max-width: 480px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 
   &__title {
     font-family: "Roboto";
@@ -15,7 +19,8 @@
   }
 
   &__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     padding-left: 0;
   }

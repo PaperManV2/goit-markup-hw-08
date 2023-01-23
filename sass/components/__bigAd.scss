@@ -4,12 +4,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/bigAddBackground/tabletImg.png);
+  background-image: url(../images/bigAddBackground/phoneImg.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   left: 0;
   right: 0;
+  top: 0;
+  margin-top: 0;
 
   &__btn {
     width: 200px;
@@ -61,6 +63,22 @@
 
     &__display {
       margin: 200px 58px 200px 57px;
+    }
+
+    &__title {
+      color: $--footer-Studio-text-color;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 42px;
+      text-align: center;
+    }
+
+    &__btn {
+      width: 200px;
+      height: 50px;
+      font-size: 16px;
     }
   }
 }
