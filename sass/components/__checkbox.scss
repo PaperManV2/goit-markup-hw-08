@@ -11,6 +11,8 @@
     font-weight: 400;
     font-size: 14px;
     color: $--gray-text;
+    text-align: center;
+    width: 70%;
   }
 
   &__custom {
@@ -38,6 +40,8 @@
   &__input {
     display: none;
     pointer-events: none;
+    width: 16px;
+    height: 15px;
   }
 
   &__input:checked + &__custom > &__image {
