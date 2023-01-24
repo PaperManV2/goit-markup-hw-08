@@ -49,6 +49,13 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .checkbox {
+    &__regulations {
+      width: 100%;
+    }
+  }
+}
 // @media screen and (max-width: 480px) {
 //   .checkbox {
 //     &__regulations {

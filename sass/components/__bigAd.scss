@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   background-image: url(../images/bigAddBackground/phoneImg.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -57,10 +58,10 @@
 
 @media screen and (min-width: 768px) {
   .bigAd {
-    background-image: url(../images/bigAddBackground/desktopImg.jpg);
+    background-image: url(../images/bigAddBackground/tabletImg.png);
 
     &__display {
-      margin: 200px 58px 200px 57px;
+      margin: 200px auto;
     }
 
     &__title {
@@ -83,6 +84,8 @@
 
 @media screen and (min-width: 1200px) {
   .bigAd {
+    background-image: url(../images/bigAddBackground/desktopImg.jpg);
+
     &__title {
       font-size: 44px;
       line-height: 60px;

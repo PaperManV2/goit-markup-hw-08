@@ -31,6 +31,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+
     height: 92px;
 
     fill: $--social-media-color;
@@ -53,6 +54,27 @@
     &:focus .customers__image,
     &:hover .customers__image {
       fill: $--blue-text;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers {
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__item {
+      max-width: 170px;
     }
   }
 }

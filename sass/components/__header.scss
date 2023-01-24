@@ -6,8 +6,14 @@
   align-items: center;
 
   &__nav {
-    margin-right: 101px;
+    margin-left: 70px;
+    margin-right: 20px;
     display: none;
+  }
+
+  &__item {
+    display: block;
+    width: 155px;
   }
 
   &__contacts {
@@ -29,11 +35,35 @@
     }
   }
 }
+
+.is-open {
+  transform: translateX(0);
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+}
+
 .phoneMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(-100%);
+  background: $--footer-Studio-text-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  transition: transform, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &__btn {
     border: 0;
     background-color: unset;
     margin-right: 15px;
+  }
+
+  &__closeBtn {
+    color: $--body-font-color;
   }
 }
 
@@ -128,7 +158,7 @@
 @media screen and (min-width: 1200px) {
   .header {
     &__logo {
-      margin-left: 215px;
+      margin-left: 100px;
     }
 
     &__nav {
