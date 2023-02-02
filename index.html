@@ -465,7 +465,33 @@
         </div>
       </div>
       <div class="phoneMenu js-menu-container">
-        <button class="phoneMenu__closeBtn js-close-menu" ><span>X</span></button>
+        <button class="phoneMenu__closeBtn js-close-menu" >
+          <svg width="40" height="40">
+            <use href="images/svg/icons.svg#phoneMenuCloseBtn"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="phoneMenu__nav">
+            <li class="phoneMenu__item phoneMenu__item--active"><a>Agencja</a></li>
+            <li class="phoneMenu__item"><a>Portfolio</a></li>
+            <li class="phoneMenu__item"><a>Kontakt</a></li>
+          </ul>
+        </nav>
+        <section class="phoneMenu__contacts">
+          <div class="phoneMenu__contacts--contacts">
+            <a class="phoneMenu__contacts--phoneNumber" href="tel:+48 111 111 111">+48 111 111 111</a>
+            <a class="phoneMenu__contacts--E-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </div>
+            <ul class="phoneMenu__socialmedia">
+              <li class="phoneMenu__link"><a>Instagram</a></li>
+              <li class="phoneMenu__break">|</li>
+              <li class="phoneMenu__link"><a>Twitter</a></li>
+              <li class="phoneMenu__break">|</li>
+              <li class="phoneMenu__link"><a>Facebook</a></li>
+              <li class="phoneMenu__break">|</li>
+              <li class="phoneMenu__link"><a>LinkedIn</a></li>
+            </ul>
+        </section>
       </div>
     <script defer src="js/mobile-menu.js"></script>
     <script
