@@ -4,12 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/bigAddBackground/phoneImg.png);
+  background-image: url(../images/bigAddBackground/phoneImg@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 400px;
+  padding: 150px 0 150px 0;
 
   &__btn {
     width: 200px;
@@ -59,6 +59,7 @@
 @media screen and (min-width: 768px) {
   .bigAd {
     background-image: url(../images/bigAddBackground/tabletImg.png);
+    padding: 0;
 
     &__display {
       margin: 200px auto;
@@ -85,6 +86,7 @@
 @media screen and (min-width: 1200px) {
   .bigAd {
     background-image: url(../images/bigAddBackground/desktopImg.jpg);
+    padding: 100px 0 100px 0;
 
     &__title {
       font-size: 44px;

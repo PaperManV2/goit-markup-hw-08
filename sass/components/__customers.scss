@@ -46,6 +46,8 @@
     align-items: center;
     border: solid 1px $--social-media-color;
     border-radius: 4px;
+    cursor: pointer;
+
     &:focus,
     &:hover {
       border-color: $--blue-text;

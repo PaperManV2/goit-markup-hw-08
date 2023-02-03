@@ -20,36 +20,49 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="header__link"
-        ><span class="header__logo"><span class="header__logo--blue">Web</span>Studio</span></a
-      >
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__listItem">
-            <a href="index.html" class="header__link">Agencja</a>
-          </li>
-          <li class="header__listItem">
-            <a href="portfolio.html" class="header__link header__nav--underline">Portfolio</a>
-          </li>
-          <li class="header__listItem">
-            <a href="#" class="header__link">kontakt</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="header__contacts">
-        <a href="mailto:info@devstudio.com" class="header__link header__item">
-          <svg width="16px" height="12px">
-            <use href="images\svg\icons.svg#envelope"></use>
-          </svg>
-          info@devstudio.com</a
-        >
-        <a href="tel:+48111111111" class="header__link header__item"
-          ><svg width="10px" height="16px">
-            <use href="images\svg\icons.svg#smartphone"></use>
-          </svg>
-          +48 111 111 111
-        </a>
-      </section>
+      <section class="header__content">
+        <div class="header__container">
+          <a href="index.html" class="header__link"
+            ><span class="header__logo"><span class="header__logo--blue">Web</span>Studio</span></a
+          >
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__listItem">
+                <a href="index.html" class="header__link header__nav--underline">Agencja</a>
+              </li>
+              <li class="header__listItem">
+                <a href="portfolio.html" class="header__link ">Portfolio</a>
+              </li>
+              <li class="header__listItem">
+                <a href="#" class="header__link ">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <section class="header__contacts">
+          <a href="mailto:info@devstudio.com" class="header__link  header__item ">
+            <svg width="20px" height="20px">
+              <use href="images\svg\icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a href="tel:+48111111111" class="header__link  header__item"
+            ><svg width="16px" height="16px">
+              <use href="images\svg\icons.svg#smartphone"></use>
+            </svg>
+            +48 111 111 111
+          </a>
+        </section>
+        <button   
+          class="phoneMenu__btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          >
+        <svg class="header__image" width="40px" height="40px">
+          <use href="images\svg\icons.svg#MenuBurger"></use>
+        </svg>
+      </button>
+    </section>
     </header>
     <div class="line"></div>
     <main class="products">
@@ -83,6 +96,7 @@
                   >
                 </div>
                 <img
+                  class="products__image"
                   src="images\portfolio\laptopWithWebsite.jpg"
                   alt="laptop with website on screen"
                 />
@@ -242,64 +256,64 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="footer__container">
-        <a href="index.html"
-          ><span class="footer__logo"><span class="footer__logo--blue">Web</span>Studio</span></a
-        >
-        <address class="footer__address">
-          m. Warszawa, Aleje Jerozolimskie 21
-          <a href="mailto:info@example.com" class="footer__link"
-            ><span class="footer__contacts">info@example.com</span></a
-          >
-          <a href="tel:+48111111111" class="footer__link"
-            ><span class="footer__contacts">+48 111 111 111</span></a
-          >
-        </address>
-      </div>
-      <div class="footer__socialmedia">
-        <span class="footer__text">DOŁĄCZ DO NAS</span>
-        <section class="socialmedia">
-          <a href="#" class="socialmedia__link">
-            <svg class="socialmedia__image" width="20px" height="20px">
-              <use href="images\svg\icons.svg#instagram"></use>
-            </svg>
-          </a>
-          <a href="#" class="socialmedia__link">
-            <svg class="socialmedia__image" width="20px" height="20px">
-              <use href="images\svg\icons.svg#twitter"></use>
-            </svg>
-          </a>
-          <a href="#" class="socialmedia__link">
-            <svg class="socialmedia__image" width="20px" height="20px">
-              <use href="images\svg\icons.svg#facebook"></use>
-            </svg>
-          </a>
-          <a href="#" class="socialmedia__link">
-            <svg class="socialmedia__image" width="20px" height="20px">
-              <use href="images\svg\icons.svg#linkedin"></use>
-            </svg>
-          </a>
-        </section>
+      <div class="footer__optimizer">
+        <div class="footer__container">
+          <div class="footer__section">
+            <a href="index.html">
+              <span class="footer__logo"><span class="footer__logo--blue">Web</span>Studio</span>
+            </a>
+            <address class="footer__address">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </address>
+          </div>
+          <div class="footer__contacts">
+            <a href="mailto:info@example.com" class="footer__link">
+              <span>info@example.com</span>
+            </a>
+            <a href="tel:+48111111111" class="footer__link">
+              <span>+48 111 111 111</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__socialmedia">
+          <span class="footer__text">DOŁĄCZ DO NAS</span>
+          <section class="socialmedia">
+            <a href="#" class="socialmedia__link">
+              <svg class="socialmedia__image" width="20px" height="20px">
+                <use href="images\svg\icons.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="socialmedia__link">
+              <svg class="socialmedia__image" width="20px" height="20px">
+                <use href="images\svg\icons.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="socialmedia__link">
+              <svg class="socialmedia__image" width="20px" height="20px">
+                <use href="images\svg\icons.svg#facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="socialmedia__link">
+              <svg class="socialmedia__image" width="20px" height="20px">
+                <use href="images\svg\icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </section>
+        </div>
       </div>
       <section class="newsletter">
         <span class="newsletter__text">ZAPISZ SIĘ DO NEWSLETTERA</span>
-        <form class="newsletter__form" name="newsletterSignUpForm">
-          <label>
-            <input
-              class="newsletter__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              required
-            />
+        <form class="newsletter__form" name="newsletterSignUpForm" >
+          <label class="newsletter__label">
+            <input class="newsletter__input" type="email" name="email" placeholder="E-mail" required />
           </label>
-          <button class="newsletter__btn" type="submit">
-            Zapisz się<svg width="24px" height="24px">
-              <use href="images\svg\icons.svg#paperPlane"></use>
-            </svg>
-          </button>
+          <button class="newsletter__btn" type="submit"><span class="newsletter__btnText">Zapisz się</span>
+          <svg width="24px" height="24px">
+            <use href="images\svg\icons.svg#paperPlane"></use>
+          </svg></button>
         </form>
       </section>
+    </footer>
     </footer>
   </body>
 </html>

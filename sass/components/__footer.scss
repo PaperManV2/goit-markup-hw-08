@@ -12,7 +12,13 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__container,
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+
   &__socialMedia {
     display: flex;
     flex-direction: column;
@@ -34,13 +40,30 @@
     gap: 20px;
   }
 
+  &__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   &__address {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 81px;
     text-align: center;
+    font-style: normal;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 9px;
+    flex-direction: column;
   }
 
   &__link {
@@ -142,6 +165,11 @@
     justify-content: center;
   }
 
+  &__btnText {
+    display: flex;
+    width: 82px;
+  }
+
   &__input {
     border: 1px solid $--newsletter-border-color;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -173,8 +201,7 @@
   }
 
   &__btn {
-    width: 200px;
-    height: 50px;
+    padding: 13px 47px 13px 47px;
     border: 0;
     font-family: "Roboto";
     font-style: normal;
@@ -213,6 +240,15 @@
     }
 
     &__container {
+      align-items: unset;
+    }
+
+    &__section {
+      align-items: unset;
+    }
+
+    &__contacts {
+      text-align: left;
       align-items: unset;
     }
 
