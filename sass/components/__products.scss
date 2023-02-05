@@ -17,7 +17,8 @@
     column-gap: 8px;
     row-gap: 8px;
     padding: 0px;
-    width: calc(100% - 88px);
+    width: calc(100% - 15px);
+    max-width: 392px;
   }
 
   &__btn {
@@ -51,6 +52,7 @@
     opacity: 0.9;
     transform: translateY(100%);
     transition: transform 250ms ease;
+    height: 100%;
   }
 
   &__overlayBox {
@@ -119,7 +121,7 @@
     justify-content: center;
     color: $--gray-text;
     padding-left: 24px;
-    width: calc(100% - 24px);
+    width: calc(100% - 26px);
     height: 110px;
     border: 1px solid $--portfolio-gallery-border-color;
   }
