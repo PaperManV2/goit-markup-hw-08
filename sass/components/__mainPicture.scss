@@ -1,4 +1,4 @@
-.bigAd {
+.mainPicture {
   background-color: $--background-color-dark;
   background: linear-gradient(#2f303a40, #2f303a40);
   display: flex;
@@ -57,7 +57,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .bigAd {
+  .mainPicture {
     background-image: url(../images/bigAddBackground/tabletImg.png);
     padding: 0;
 
@@ -84,7 +84,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .bigAd {
+  .mainPicture {
     background-image: url(../images/bigAddBackground/desktopImg.jpg);
     padding: 100px 0 100px 0;
 
