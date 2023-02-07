@@ -101,11 +101,11 @@
   .team {
     height: 1285px;
     padding-top: 60px;
-    gap: 30px;
 
     &__list {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
     }
 
     &__photo {
@@ -115,6 +115,7 @@
 
     &__container {
       height: 536px;
+      padding-bottom: 18px;
     }
   }
 }
@@ -138,6 +139,7 @@
 
     &__container {
       height: 428px;
+      padding-bottom: 12px;
     }
   }
 }

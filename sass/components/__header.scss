@@ -88,6 +88,11 @@
     gap: 36px;
   }
 
+  &__tab:hover,
+  &__tab:focus {
+    color: $--blue-text;
+  }
+
   &__item {
     font-family: "Roboto";
     font-style: normal;
@@ -95,11 +100,6 @@
     font-size: 40px;
 
     &--active {
-      color: $--blue-text;
-    }
-
-    &:hover,
-    &:focus {
       color: $--blue-text;
     }
   }
@@ -165,6 +165,8 @@
   }
 
   .header {
+    height: 80px;
+
     &__container {
       display: flex;
       align-items: center;
@@ -179,7 +181,7 @@
 
       &--underline::after {
         content: "";
-        top: -10px;
+        top: -1px;
         left: 0px;
         width: 53px;
         height: 4px;
@@ -270,7 +272,7 @@
 
       &--underline::after {
         content: "";
-        top: -10px;
+        top: -1px;
         left: 0px;
         width: 53px;
         height: 4px;
