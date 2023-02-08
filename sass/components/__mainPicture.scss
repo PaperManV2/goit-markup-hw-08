@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/bigAddBackground/phoneImg@2x.png);
+  background-image: url(../images/bigAddBackground/background-hero-mobile@2x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -61,7 +61,7 @@
 
 @media screen and (min-width: 768px) {
   .mainPicture {
-    background-image: url(../images/bigAddBackground/tabletImg.png);
+    background-image: url(../images/bigAddBackground/background-hero-tab.jpg);
     padding: 0;
 
     &__display {
@@ -88,7 +88,7 @@
 
 @media screen and (min-width: 1200px) {
   .mainPicture {
-    background-image: url(../images/bigAddBackground/desktopImg.jpg);
+    background-image: url(../images/bigAddBackground/background-hero.jpg);
     padding: 100px 0 100px 0;
 
     &__title {
