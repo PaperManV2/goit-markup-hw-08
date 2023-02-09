@@ -174,21 +174,43 @@
       gap: 93px;
     }
 
+    &__link {
+      display: block;
+      transition-property: color, fill, opacity;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+
+      &:visited {
+        color: $--body-font-color;
+      }
+
+      &:hover,
+      &:focus {
+        color: $--blue-text;
+        opacity: 100%;
+        fill: currentColor;
+      }
+    }
+
     &__nav {
       width: 275px;
       display: block;
       color: $--body-font-color;
 
-      &--underline::after {
-        content: "";
-        top: -1px;
-        left: 0px;
-        width: 53px;
-        height: 4px;
-        transform: translateY(46px);
-        background-color: $--blue-text;
-        border-radius: 2px;
-        position: absolute;
+      &--underline {
+        color: $--blue-text !important;
+        &::after {
+          content: "";
+          top: -1px;
+          left: 0px;
+          width: 53px;
+          height: 4px;
+          transform: translateY(46px);
+          background-color: $--blue-text;
+          border-radius: 2px;
+          position: absolute;
+        }
       }
     }
 
@@ -209,25 +231,6 @@
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-      }
-    }
-
-    &__link {
-      display: block;
-      transition-property: color, fill, opacity;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-
-      &:visited {
-        color: $--body-font-color;
-      }
-
-      &:hover,
-      &:focus {
-        color: $--blue-text;
-        opacity: 100%;
-        fill: currentColor;
       }
     }
 
