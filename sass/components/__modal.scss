@@ -1,8 +1,8 @@
 .modal {
   position: relative;
-  width: 100%;
+  width: calc(100% - 50px);
   height: 100%;
-  max-width: 460px;
+  max-width: 450px;
   max-height: 551px;
   background: $--footer-Studio-text-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
