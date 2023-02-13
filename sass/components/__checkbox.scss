@@ -15,6 +15,11 @@
     width: 70%;
   }
 
+  &__link {
+    color: $--blue-text;
+    text-decoration: underline;
+  }
+
   &__custom {
     border: 1px solid $--body-font-color;
     border-radius: 2px;
