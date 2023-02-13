@@ -141,7 +141,7 @@
   //margin-top: -30px;
   width: 100%;
   height: 100%;
-  max-width: 500px;
+  max-width: 480px;
   display: flex;
   flex-direction: column;
 
@@ -179,7 +179,7 @@
     background: $--background-color-dark;
     padding-left: 16px;
     color: $--footer-Studio-text-color;
-    max-width: 400px;
+    max-width: 430px;
 
     &::placeholder {
       color: $--newsletter-border-color;
@@ -262,6 +262,8 @@
   }
 
   .newsletter {
+    width: 100%;
+    max-width: 570px;
     margin-top: -25px;
     align-items: unset;
 
@@ -271,11 +273,13 @@
 
     &__input {
       width: 100%;
+      max-width: 358px;
     }
 
     &__form {
       max-height: 50px;
       flex-direction: row;
+      gap:12px
     }
   }
 }
