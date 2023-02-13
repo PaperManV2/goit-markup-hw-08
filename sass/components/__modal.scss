@@ -1,9 +1,9 @@
 .modal {
   position: relative;
   width: calc(100% - 30px);
-  height: 100%;
+
   max-width: 450px;
-  max-height: 551px;
+
   background: $--footer-Studio-text-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -14,7 +14,7 @@
   align-items: center;
   gap: 30px;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 
   &__close {
     top: 8px;
@@ -43,6 +43,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+
   }
 
   &__input {
